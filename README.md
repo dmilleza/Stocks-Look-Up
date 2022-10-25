@@ -26,3 +26,26 @@ website steps:
 - view list of stocks 
 - have option to save selected stock
 - upon selecting stock, new window pops up to view news
+
+
+
+Sam
+# Got-git's Project One
+## General info
+<ins>User Story</ins>
+
+<ins>Acceptance Criteria</ins>
+
+## Technologies
+
+
+Alex
+
+### Read Me
+## Search for news across multiple platforms!
+**Technologies and Concepts Used**
+**Methods**
+
+**COPYRIGHT**
+*Alexander Sigala*
+
