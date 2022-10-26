@@ -45,3 +45,63 @@ header {
   display: block;
   margin: 0 auto;
 }
+
+.leftHand {
+    color: blue;
+    display: flex;
+    justify-content: space-between;    
+    margin: 20px;
+}
+
+.leftStocks {
+    border: black solid;
+    height: 43.8rem;
+    width: 30rem;
+}
+
+.stock0 {
+    color: royalblue;
+    border-bottom: 5px black solid;
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+}
+
+.stock1 {
+    display: flex;
+    justify-content: center;
+    border-bottom: black solid;
+    height: 80px;
+}
+
+.stock2 {
+    display: flex;
+    justify-content: center;
+    border-bottom: black solid;
+    height: 100px;
+}
+
+.stock3 {
+    display: flex;
+    justify-content: center;
+    border-bottom: black solid;
+    height: 100px;
+}
+
+.stock4 {
+    display: flex;
+    justify-content: center;
+    border-bottom: black solid;
+    height: 100px;
+}
+
+.stock5 {
+    display: flex;
+    justify-content: center;
+}
+
+.stockList {
+    border: black solid;
+    height: 43.8rem;
+    width: 30rem;
+}
