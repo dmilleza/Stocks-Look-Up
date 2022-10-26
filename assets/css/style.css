@@ -1,34 +1,47 @@
-html {
-    box-sizing: border-box;
-
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
+header {
+  min-height: 200px;
+  width: 100%;
+  border-bottom: 10px solid black;
+}
 
 .navBar {
-    display: flex;
-    justify-content: space-between;
+  width: 100%;
+  height: 80px;
+  display: flex;
+  flex-flow: wrap;
+  justify-content: space-between;
+  border-bottom: 2px solid black;
 }
 
-.navBar li {
-    display: inline;
-    list-style: none;
-    margin: 20px;
-    text-decoration: underline;
-    font-size: larger;
+.navList {
+  display: flex;
+  justify-content: space-around;
+  background-color: green;
 }
 
-.main {
-    display: flex;
-    justify-content: center;
+.jumbo {
+  height: 400px;
+  align-content: center;
+}
+.jumbo .jumboBox {
+  width: 400px;
+  margin: 100px auto;
+  border: 2px solid black;
+  text-align: center;
 }
 
 .email {
-    display: flex;
-    justify-content: center;
+  display: block;
+  margin: 0 auto;
 }
 
 .password {
-    display: flex;
-    justify-content: center;
-    margin-left: 25px;
+  display: block;
+  margin: 0 auto;
 }
