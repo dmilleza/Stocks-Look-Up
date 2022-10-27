@@ -1,0 +1,121 @@
+html {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 16;
+}
+
+body {
+  box-sizing: border-box;
+  margin: 0 0;
+}
+header {
+  background-color: green;
+  border-width: 5px 11px;
+  border-color: black;
+  border-style: solid;
+  text-align: center;
+  margin: 0px 0px;
+}
+
+h1 {
+  text-align: center;
+}
+
+.main-pic {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+nav > ul:hover {
+  opacity: 1;
+}
+nav > ul {
+  display: flex;
+  list-style-type: none;
+  padding: 1rem;
+  width: 220px;
+  border: 2px solid black;
+  margin-left: auto;
+  margin-right: auto;
+  opacity: 0.3;
+}
+
+nav li {
+  border: 10px black;
+  padding: 0.5em;
+  text-align: center;
+}
+
+nav li:hover {
+  text-decoration: line-through;
+}
+
+h2 {
+  background-color: lightcyan;
+  display: block;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+main {
+  display: block;
+  margin-top: 0;
+  padding: 0px;
+  background-color: green;
+  border-width: 5px 11px;
+  border-color: black;
+  border-style: solid;
+}
+
+.what {
+  display: block;
+}
+
+.what > ul {
+  display: block;
+  border: 2px solid;
+  margin: 10px auto;
+  padding: 5px;
+  width: 40%;
+  border-radius: 5px 5px;
+  list-style-position: inside;
+  background-color: white;
+}
+
+.box {
+  background-color: grey;
+  margin: 2px;
+  width: 200px;
+}
+
+.box1 {
+  min-height: 200px;
+  align-self: flex-start;
+  width: 380px;
+  flex: 1;
+}
+
+.box2 {
+  /*min-height: 200px;*/
+  align-self: stretch;
+  flex: 2;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.box3 {
+  min-height: 300px;
+}
+
+.flexpractice {
+  display: flex;
+  flex-direction: row;
+  height: 80vh;
+  align-items: center;
+  padding: 10px;
+}
+
+#button1 {
+  display: block;
+  margin: 10px auto;
+}
