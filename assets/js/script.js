@@ -1,5 +1,5 @@
 // submit button stuff
-Element.addEventlistener("click," function)
+Element.addEventlistener("click" , function())
 // local storage set item
 
 // local storage get item

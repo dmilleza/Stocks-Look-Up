@@ -15,7 +15,7 @@ header {
   height: 80px;
   display: flex;
   flex-flow: wrap;
-
+  background-color: lightgreen;
   border-bottom: 2px solid black;
 }
 
@@ -50,14 +50,23 @@ header {
 }
 
 .jumbo {
-  height: 400px;
+  height: 600px;
   align-content: center;
+  background-image: url("../images/stocks.jpeg");
 }
 .jumbo .jumboBox {
-  width: 400px;
-  margin: 100px auto;
+  width: 100%;
   border: 2px solid black;
   text-align: center;
+  background-color: bisque;
+}
+
+.jumbo .boxHolder {
+  height: 100%;
+  width: 400px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
 }
 
 .email {
@@ -70,62 +79,50 @@ header {
   margin: 0 auto;
 }
 
-.leftHand {
-  color: blue;
-  display: flex;
-  justify-content: space-between;
-  margin: 20px;
-}
-
 .leftStocks {
-  border: black solid;
-  height: 43.8rem;
-  width: 30rem;
-}
-
-.stock0 {
-  color: royalblue;
-  border-bottom: 5px black solid;
-  display: flex;
-  justify-content: center;
-  font-size: 50px;
-}
-
-.stock1 {
-  display: flex;
-  justify-content: center;
-  border-bottom: black solid;
-  height: 80px;
-}
-
-.stock2 {
-  display: flex;
-  justify-content: center;
-  border-bottom: black solid;
-  height: 100px;
-}
-
-.stock3 {
-  display: flex;
-  justify-content: center;
-  border-bottom: black solid;
-  height: 100px;
-}
-
-.stock4 {  
-  display: flex;
-  justify-content: center;
-  border-bottom: black solid;
-  height: 100px;
-}
-
-.stock5 {
-  display: flex;
-  justify-content: center;
+  border: 2px black solid;
+  width: 250px;
 }
 
 .stockList {
   border: black solid;
-  height: 43.8rem;
-  width: 30rem;
+  flex: 2;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+main {
+  border-bottom: 5px solid black;
+  height: 700px;
+}
+
+main .favorites {
+  margin-right: 20px;
+  border: solid black;
+}
+
+.mainContainer {
+  width: 1000px;
+  display: flex;
+  height: 700px;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+
+footer {
+  height: 400px;
+  display: flex;
+}
+
+.leftShoe,
+.rightShoe {
+  flex: 1;
+  border: solid blue;
+}
+
+.rightShoe .contact {
+  border: solid black;
+}
+.rightShoe {
+  display: flex;
 }
