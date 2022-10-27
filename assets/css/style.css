@@ -15,14 +15,38 @@ header {
   height: 80px;
   display: flex;
   flex-flow: wrap;
-  justify-content: space-between;
+
   border-bottom: 2px solid black;
 }
 
+/*.navBar .name,
+.navList,
+.signstatus {
+  border: 2px solid black;
+}*/
+
+.name {
+  flex: 1;
+  margin-left: 10px;
+}
 .navList {
   display: flex;
-  justify-content: space-around;
-  background-color: green;
+  padding: 0;
+  list-style-type: none;
+  flex: 1;
+  margin: 0;
+}
+
+.signstatus {
+  align-self: center;
+  flex: 2;
+  text-align: right;
+  margin-right: 20px;
+}
+
+.navList li {
+  margin: 0 10px;
+  align-self: center;
 }
 
 .jumbo {
@@ -47,61 +71,61 @@ header {
 }
 
 .leftHand {
-    color: blue;
-    display: flex;
-    justify-content: space-between;    
-    margin: 20px;
+  color: blue;
+  display: flex;
+  justify-content: space-between;
+  margin: 20px;
 }
 
 .leftStocks {
-    border: black solid;
-    height: 43.8rem;
-    width: 30rem;
+  border: black solid;
+  height: 43.8rem;
+  width: 30rem;
 }
 
 .stock0 {
-    color: royalblue;
-    border-bottom: 5px black solid;
-    display: flex;
-    justify-content: center;
-    font-size: 50px;
+  color: royalblue;
+  border-bottom: 5px black solid;
+  display: flex;
+  justify-content: center;
+  font-size: 50px;
 }
 
 .stock1 {
-    display: flex;
-    justify-content: center;
-    border-bottom: black solid;
-    height: 80px;
+  display: flex;
+  justify-content: center;
+  border-bottom: black solid;
+  height: 80px;
 }
 
 .stock2 {
-    display: flex;
-    justify-content: center;
-    border-bottom: black solid;
-    height: 100px;
+  display: flex;
+  justify-content: center;
+  border-bottom: black solid;
+  height: 100px;
 }
 
 .stock3 {
-    display: flex;
-    justify-content: center;
-    border-bottom: black solid;
-    height: 100px;
+  display: flex;
+  justify-content: center;
+  border-bottom: black solid;
+  height: 100px;
 }
 
-.stock4 {
-    display: flex;
-    justify-content: center;
-    border-bottom: black solid;
-    height: 100px;
+.stock4 {  
+  display: flex;
+  justify-content: center;
+  border-bottom: black solid;
+  height: 100px;
 }
 
 .stock5 {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .stockList {
-    border: black solid;
-    height: 43.8rem;
-    width: 30rem;
+  border: black solid;
+  height: 43.8rem;
+  width: 30rem;
 }
