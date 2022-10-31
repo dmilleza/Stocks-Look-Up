@@ -1,77 +1,44 @@
-body {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-header {
-  background-color: #7a7777;
-  padding: 10px;
-  min-height: 400px;
-}
-
-.navBar {
-  width: 100%;
-}
-
-.name {
-  text-align: center;
-}
-.navList {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-  text-align: center;
-}
-
-.signstatus {
-}
-
-.navList li {
+.soloCard {
+  width: 400px;
+  background-color: black;
 }
 
 .jumbo {
-  background-image: url("../images/stocks.jpeg");
+  height: 600px;
+  background-image: url('../images/stocks.jpeg');
   background-size: cover;
-  background-repeat: no-repeat;
-  width: 100%;
-  min-height: 200px;
-}
-.jumbo .jumboBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.jumbo .boxHolder {
+.jumboBox {
+  width: 300px;
+  height: 250px;
+  background-color: grey;
+  text-align: center;
+  border: 2px solid black;
 }
-
 .email {
+  display: block;
+  margin: 0 auto;
 }
-
 .password {
+  display: block;
+  margin: 0 auto;
 }
 
-.leftStocks {
+.column {
+  height: 400px;
 }
 
-.stockList {
+.column h2 {
+  text-align: center;
+  padding: 10px;
 }
 
-main {
-}
-
-main .favorites {
-}
-
-.mainContainer {
-}
-
-footer {
-}
-
-.leftShoe,
-.rightShoe {
-}
-
-.rightShoe .contact {
-}
-.rightShoe {
+.favorites {
+  height: 150px;
+  border-color: 2px solid black;
+  display: show;
 }
