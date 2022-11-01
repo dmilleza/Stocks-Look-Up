@@ -42,3 +42,10 @@
   border-color: 2px solid black;
   display: show;
 }
+
+.h1Title {
+  margin-top: 6px;
+  font-size: 25px;
+  font-style: italic;
+}
+
