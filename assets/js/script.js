@@ -1,5 +1,6 @@
 // submit button stuff
-Element.addEventlistener("click" , function())
+var signIn = $('.signedIn');
+signIn.text('testing233');
 // local storage set item
 
 // local storage get item
@@ -12,13 +13,10 @@ Element.addEventlistener("click" , function())
 
 // make jumboBox disappear
 
-
-
-var jumboBoxEl = document.querySelector(".jumboBox")
-var example1 = document.querySelector("")
-var example1 = document.querySelector("")
-var example1 = document.querySelector("")
-var example1 = document.querySelector("")
-var example1 = document.querySelector("")
-var example1 = document.querySelector("")
-
+var jumboBoxEl = document.querySelector('.jumboBox');
+var example1 = document.querySelector('');
+var example1 = document.querySelector('');
+var example1 = document.querySelector('');
+var example1 = document.querySelector('');
+var example1 = document.querySelector('');
+var example1 = document.querySelector('');
