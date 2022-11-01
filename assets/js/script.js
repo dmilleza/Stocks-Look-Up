@@ -15,9 +15,11 @@ const options = {
 };
 
 fetch(
-  'https://yh-finance.p.rapidapi.com/auto-complete?q=tesla&region=US',
+  'https://yh-finance.p.rapidapi.com/market/get-trending-tickers?region=US',
   options
 )
   .then((response) => response.json())
-  .then((response) => console.log(response))
-  .catch((err) => console.error(err));
+  .then(function (response) {
+    console.log(response);
+    console.log(response.finance.result[0].quotes[0].symbol);
+  });
