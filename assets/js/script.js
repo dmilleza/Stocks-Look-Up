@@ -1,22 +1,7 @@
-// submit button stuff
-var signIn = $('.signedIn');
-signIn.text('testing233');
-// local storage set item
+var signIn = document.querySelector('.signedIn');
+var burger = document.querySelector('#burger');
+var navList = document.querySelector('#navbarBasicExample');
 
-// local storage get item
-
-// dark theme
-
-// fetch api
-
-// fetch second api
-
-// make jumboBox disappear
-
-var jumboBoxEl = document.querySelector('.jumboBox');
-var example1 = document.querySelector('');
-var example1 = document.querySelector('');
-var example1 = document.querySelector('');
-var example1 = document.querySelector('');
-var example1 = document.querySelector('');
-var example1 = document.querySelector('');
+burger.addEventListener('click', () => {
+  navList.classList.toggle('is-active');
+});
