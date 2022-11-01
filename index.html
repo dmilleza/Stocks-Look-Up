@@ -8,13 +8,13 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
     />
-    <link rel="stylesheet" href="./assets/css/style.css">
-    </head>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
   <body>
     <nav class="navbar" role="navigation" aria-label="main navigation">
       <div class="navbar-brand">
-       <h1 class="h1Title"> <strong> Stocks Look up</strong></h1>
-      
+        <h1 class="h1Title mr-6 pl-5"><strong> Stocks Look up</strong></h1>
+
         <a
           role="button"
           class="navbar-burger"
@@ -30,71 +30,84 @@
       </div>
 
       <div id="navbarBasicExample" class="navbar-menu">
-        <div class="navbar-start" >
-          <a class="navbar-item"> About </a>
+        <div class="navbar-start">
+          <a class="navbar-item" id> About </a>
 
-          <a class="navbar-item"> Check News </a>
-
-          <a class="navbar-item">Contact</a>
+          <a class="navbar-item" href="#stockLi"> Search Stocks </a>
         </div>
 
         <div class="navbar-end" style="justify-self: flex-end">
           <div class="navbar-item">
-            <div class="signedIn">
-              
-            </div>
+            <div class="signedIn"></div>
           </div>
         </div>
       </div>
     </nav>
 
-    
-      <div class="jumbo">
-          
-            <section class="jumboBox">
-              <h1>Sign Up!!!</h1>
-              <div class="textHolder">
-                <p>Already have an account? Sign in here</p>
-                <p>Why sign up?</p>
-              </div>
-              <input type="email" class="email" placeholder="Email" />
-              <input type="text" class="password" placeholder="Password" />
-              <button name="submit">Submit</button>
-            </section>
-          
-      </div>
+    <div class="jumbo">
+      <section class="jumboBox">
+        <h1 class="title">Sign Up!!!</h1>
+        <div class="underSign">
+          <p>Already have an account? Sign in here</p>
 
-      <div class="section">
-        <div class="container">
-          <div class="columns box">
-            <div class="column is 4 box"  >
-              <h2>Stock List</h2>
-              <div class="favoriteButton box">
-                <p> my favorites</p>
-                <div class="favorites box" style="border-color: 2px solid black">
-                  favorites here
-                </div>
-              </div>
-              <div class="stockList box">
-                List of stocks here
+          <input type="email" class="email" placeholder="Email" />
+          <input type="text" class="password" placeholder="Password" />
+          <button name="submit">Submit</button>
+        </div>
+      </section>
+    </div>
+
+    <div class="section" style="background-color: rgb(197, 195, 195)">
+      <div class="container">
+        <div class="columns box">
+          <div class="column is 4 box column4">
+            <h2 id="stockLi">Stock List</h2>
+            <div class="favoriteButton box">
+              <p>my favorites</p>
+              <div class="favorites box" style="border-color: 2px solid black">
+                favorites here
               </div>
             </div>
-            <div class="column is-8">News goes here</div>
+            <form action="" id="stocksearch">
+              <input
+                type="text"
+                name="listsearch"
+                placeholder="Choose/search a stock"
+              />
+              <button id="search">Search</button>
+            </form>
+            <div class="stockList box" style="height: 200px"></div>
+          </div>
+          <div class="column is-8 box p-6 newsBox">
+            <div class="box newsBox2"></div>
           </div>
         </div>
       </div>
-          
-     
-      <footer class="footer">
-        <div class="content has-text-centered">
+    </div>
+
+    <footer class="footer" style="background-color: rgba(42, 105, 193, 0.865)">
+      <div class="content has-text-centered">
+        <p>
+          <strong style="color: white">Stocks Look Up</strong> by Darren,
+          Evgheni, and Michael
+        </p>
+      </div>
+    </footer>
+
+    <div class="modal">
+      <div class="modal-background">
+        <div class="modal-content has-background-white py-5 px-5">
+          <h3 class="title mb-6">About Us</h3>
           <p>
-            <strong>Stocks Look Up</strong> by Darren, Evgheni, and Michael
+            This webpage displays the Business Summary of a chosen stock. The
+            list of stocks shown are the current trending stocks according to
+            YH-Finance. The purpose of this webpage is to inform the user the
+            summary of the stock for financial insight for potential investing.
           </p>
         </div>
-      </footer>
-  
+      </div>
+    </div>
 
-      
-      <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/script.js"></script>
   </body>
 </html>
