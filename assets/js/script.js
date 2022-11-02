@@ -63,7 +63,7 @@ form.addEventListener('submit', function (e) {
     stockName.value +
     '/asset-profile';
 
-  fetch(url, options)
+  fetch(url, options2)
     .then((response) => response.json())
     .then(function (response) {
       console.log(response.assetProfile.longBusinessSummary);
