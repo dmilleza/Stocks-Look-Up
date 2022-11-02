@@ -14,12 +14,13 @@ var password = document.querySelector('.password');
 var submit = document.querySelector('.submit');
 var favorite = document.getElementById('favorite');
 var search = document.querySelector('#search');
+var favorites = document.querySelector('.favorites');
 
 burger.addEventListener('click', () => {
   navList.classList.toggle('is-active');
 });
 
-/*const options = {
+const options = {
   method: 'GET',
   headers: {
     'X-RapidAPI-Key': 'd260607c62msh9aa714a7c4a64dfp1422a2jsn930883be9576',
@@ -79,7 +80,7 @@ form.addEventListener('submit', function (e) {
 
       newsDiv2.replaceChildren(news);
     });
-});*/
+});
 
 function favorite1() {
   var userProfile = {
@@ -100,7 +101,12 @@ favorite.addEventListener('click', function (event) {
   console.log(searchName);
   var userProfile = JSON.parse(localStorage.getItem('userProfile'));
   userProfile.fav = searchName;
-  console.log(userProfile);
+  var favList = document.createElement('ul');
+  var favItem = document.createElement('li');
+  favItem.textContent = searchName;
+  favList.appendChild(favItem);
+  favorites.appendChild(favList);
+
   localStorage.setItem('userProfile', JSON.stringify(userProfile));
 });
 
