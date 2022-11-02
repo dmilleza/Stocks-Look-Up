@@ -9,6 +9,11 @@ var columns = document.querySelector('.columns');
 var about = document.querySelector('.about');
 var modalBg = document.querySelector('.modal-background');
 var modal = document.querySelector('.modal');
+var email = document.querySelector('.email');
+var password = document.querySelector('.password');
+var submit = document.querySelector('.submit')
+var favorite = document.getElementById('favorite')
+
 
 burger.addEventListener('click', () => {
   navList.classList.toggle('is-active');
@@ -63,7 +68,7 @@ form.addEventListener('submit', function (e) {
     stockName.value +
     '/asset-profile';
 
-  fetch(url, options)
+  fetch(url, options2)
     .then((response) => response.json())
     .then(function (response) {
       console.log(response.assetProfile.longBusinessSummary);
@@ -75,3 +80,18 @@ form.addEventListener('submit', function (e) {
       newsDiv2.replaceChildren(news);
     });
 });
+
+function favorite1() {
+    var userProfile = {
+      email: email.value,
+      password: password.value,
+    }
+    localStorage.setItem("userProfile", JSON.stringify(userProfile))
+}
+
+
+  submit.addEventListener('click', function(event){
+    event.preventDefault();
+    favorite1()
+  })
+
