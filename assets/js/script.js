@@ -6,20 +6,20 @@ var newsDiv2 = document.querySelector('.newsBox2');
 var newsDiv = document.querySelector('.newsBox');
 var form = document.querySelector('#stocksearch');
 var columns = document.querySelector('.columns');
-var about = document.querySelector('.about');
+var about = document.querySelector('#about');
 var modalBg = document.querySelector('.modal-background');
 var modal = document.querySelector('.modal');
 var email = document.querySelector('.email');
 var password = document.querySelector('.password');
-var submit = document.querySelector('.submit')
-var favorite = document.getElementById('favorite')
-
+var submit = document.querySelector('.submit');
+var favorite = document.getElementById('favorite');
+var search = document.querySelector('#search');
 
 burger.addEventListener('click', () => {
   navList.classList.toggle('is-active');
 });
 
-const options = {
+/*const options = {
   method: 'GET',
   headers: {
     'X-RapidAPI-Key': 'd260607c62msh9aa714a7c4a64dfp1422a2jsn930883be9576',
@@ -79,19 +79,35 @@ form.addEventListener('submit', function (e) {
 
       newsDiv2.replaceChildren(news);
     });
-});
+});*/
 
 function favorite1() {
-    var userProfile = {
-      email: email.value,
-      password: password.value,
-    }
-    localStorage.setItem("userProfile", JSON.stringify(userProfile))
+  var userProfile = {
+    email: email.value,
+    password: password.value,
+  };
+  localStorage.setItem('userProfile', JSON.stringify(userProfile));
 }
 
+submit.addEventListener('click', function (event) {
+  event.preventDefault();
+  favorite1();
+});
 
-  submit.addEventListener('click', function(event){
-    event.preventDefault();
-    favorite1()
-  })
+favorite.addEventListener('click', function (event) {
+  event.preventDefault();
+  var searchName = document.getElementById('stockSearcher').value;
+  console.log(searchName);
+  var userProfile = JSON.parse(localStorage.getItem('userProfile'));
+  userProfile.fav = searchName;
+  console.log(userProfile);
+  localStorage.setItem('userProfile', JSON.stringify(userProfile));
+});
 
+about.addEventListener('click', function () {
+  modal.setAttribute.add('is-active');
+});
+
+modalBg.addEventListener('click', function () {
+  modal.setAttribute.remove('is-active');
+});
