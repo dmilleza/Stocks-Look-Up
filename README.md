@@ -2,27 +2,32 @@
 
 ## Description
 
-This webpage dynamically displays a list of stocks and the current news of a selected stock. The user will be able to login with their credentials, so that they can save a stock to their favorites list and quickly view it whenever they are logged in. The webpage is responsive to all screen sizes and has a dark theme mode.
+Application displays the current top 20 trending tickers according to the YH-Finance API. When the user searches for a selected symbol,
+the Business Summary for that symbol appears(retrieved from another API: Yahoo Finance), showing a description on what the company or ticker symbol is about and/or what they do.
+User is able to save the symbol to their favorites list, which will not go away even if the webpage is re-loaded. User is also able
+to remove the symbol from their list.
 
 ## User Story
 
-- As a day trader, I want to look up and view information about a stock's price and its current news.
+- As a day trader, I want to look up and view information about a ticker symbol's Business Summary for potential investing.
 
-- As a user, I want to save selected stocks in my profile so that I can quickly view them in my favorites list whenever I login with my email and password.
+- As a user, I want to save selected symbols in my favorites list and also to be able to remove them.
 
 ## Acceptance Criteria
 
-- It's done when I can view the stocks I previously saved as soon as I login again.
+- It's done when I can view the current top 20 trending stocks on page load.
 
-- It's done when the webpage displays a list of stocks, and, upon clicking on a stock, a new display element appears and the text content shows the current news about selected stock.
+- It's done when the Business Summary appears when I enter in a symbol.
 
-## <a href="">Link to Application</a>
+- It's done when webpage contains a modal and is responsive to all screen sizes.
+
+- It's done when the use of 'localStorage' stores a favorited symbol to the user's favorite list.
 
 ## APIs
 
-1. yahoo finance
-2. alpha advantage
+1. Yahoo Finance
+2. YH - Finance
 
-## Wireframe
+<img src="./assets/images/Screen Shot 2022-11-03 at 1.55.25 AM.png" alt="webpage-image">
 
-<img src="./assets/IMG_8241.JPG" alt="Wireframe-Pic">
+## <a href="https://dmilleza.github.io/Stocks-Look-Up/">Link to Application</a>

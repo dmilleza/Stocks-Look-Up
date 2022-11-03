@@ -41,7 +41,6 @@
 .favorites {
   height: 150px;
   border-color: 2px solid black;
-  display: show;
 }
 
 .h1Title {
@@ -68,9 +67,13 @@ footer {
   width: 100px;
 }
 .underSign {
-  margin-top: 80px;
+  margin-top: 24px;
 }
 
 .newsBox {
   overflow: scroll;
+}
+
+#favList {
+  padding: 2px;
 }
