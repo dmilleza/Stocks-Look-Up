@@ -14,7 +14,6 @@
     <nav class="navbar" role="navigation" aria-label="main navigation">
       <div class="navbar-brand">
         <h1 class="h1Title mr-6 pl-5"><strong> Stocks Look up</strong></h1>
-
         <a
           role="button"
           class="navbar-burger"
@@ -31,43 +30,25 @@
 
       <div id="navbarBasicExample" class="navbar-menu">
         <div class="navbar-start">
-          <button class="navbar-item" id="about">About</button>
+          <button class="navbar-item" id="aboutThis">About</button>
 
           <a class="navbar-item" href="#stockLi"> Search Stocks </a>
-        </div>
-
-        <div class="navbar-end" style="justify-self: flex-end">
-          <div class="navbar-item">
-            <div class="signedIn"></div>
-          </div>
         </div>
       </div>
     </nav>
 
-    <div class="jumbo">
-      <section class="jumboBox">
-        <h1 class="title">Sign Up!!!</h1>
-        <div class="underSign">
-          <p>Already have an account? Sign in here</p>
+    <div class="jumbo"></div>
 
-          <input type="email" class="email" placeholder="Email" />
-          <input type="password" class="password" placeholder="Password" />
-          <button name="submit" class="submit">Submit</button>
-        </div>
-      </section>
-    </div>
-
-    <div class="section" style="background-color: rgb(197, 195, 195)">
+    <main class="section" style="background-color: rgb(197, 195, 195)">
       <div class="container">
         <div class="columns box">
           <div class="column is 4 box column4">
-            <h2 id="stockLi">Stock List</h2>
+            <h2 id="stockLi" class="title">Stock List</h2>
             <div class="favoriteButton box">
               <p>my favorites</p>
-              <div
-                class="favorites box"
-                style="border-color: 2px solid black"
-              ></div>
+              <div id="favList" class="favorites box">
+               
+              </div>
             </div>
             <form action="" id="stocksearch">
               <input
@@ -77,7 +58,7 @@
                 id="stockSearcher"
               />
               <button id="search">Search</button>
-              <button id="favorite">Favorite</button>
+              <button id="favoriteButton">Favorite</button>
             </form>
             <div class="stockList box" style="height: 200px"></div>
           </div>
@@ -86,16 +67,7 @@
           </div>
         </div>
       </div>
-    </div>
-
-    <footer class="footer" style="background-color: rgba(42, 105, 193, 0.865)">
-      <div class="content has-text-centered">
-        <p>
-          <strong style="color: white">Stocks Look Up</strong> by Darren,
-          Evgheni, and Michael
-        </p>
-      </div>
-    </footer>
+    </main>
 
     <div class="modal">
       <div class="modal-background">
@@ -111,6 +83,14 @@
       </div>
     </div>
 
-    <script src="./assets/js/script.js"></script>
+    <footer class="footer" style="background-color: rgba(42, 105, 193, 0.865)">
+      <div class="content has-text-centered">
+        <p>
+          <strong style="color: white">Stocks Look Up</strong> by Darren,
+          Evgheni, and Michael
+        </p>
+      </div>
+    </footer>
   </body>
+  <script src="./assets/js/script.js"></script>
 </html>
